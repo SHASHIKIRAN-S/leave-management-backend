@@ -1,106 +1,184 @@
+# 🚀 Leave Management System
 
-🚀 Leave Management System
-This repository contains the full stack for a Leave Management System, comprising a FastAPI backend and two Next.js frontends — one for 👨‍🎓 Students and one for 🧑‍💼 Admins.
+A comprehensive full-stack Leave Management System built with FastAPI backend and dual Next.js frontends for students and administrators.
 
-🧱 Project Structure
-graphql
-Copy code
-📁 FastAPI-Server/          # Backend API built with FastAPI 🐍  
+---
 
-📁 Student-Application/     # Next.js frontend for students 👨‍🎓  
+## 📋 Table of Contents
 
-📁 Admin-Application/       # Next.js frontend for administrators 🧑‍💼  
-🛠️ Getting Started
-Follow the instructions below to set up and run the project locally.
+1. [Project Overview](#-project-overview)
+2. [Project Structure](#-project-structure)
+3. [Prerequisites](#-prerequisites)
+4. [Installation & Setup](#-installation--setup)
+5. [Running the Applications](#-running-the-applications)
+6. [Additional Notes](#-additional-notes)
+7. [License](#-license)
 
-✅ Prerequisites
-🟢 Node.js (LTS version recommended)
+---
 
-📦 npm / yarn / pnpm / bun
+## 🎯 Project Overview
 
-🐍 Python 3.8+
+This repository contains a complete Leave Management System with:
 
-🔧 pip (Python package installer)
+- **Backend**: FastAPI server with RESTful APIs
+- **Student Frontend**: Next.js application for student leave requests
+- **Admin Frontend**: Next.js application for administrative management
 
-🛢️ MySQL running locally
+---
 
-🔧 1. Backend Setup – FastAPI-Server
-Navigate into the backend directory and install Python dependencies:
+## 🧱 Project Structure
 
-bash
-Copy code
+```
+📁 FastAPI-Server/          # Backend API built with FastAPI 🐍
+📁 Student-Application/     # Next.js frontend for students 👨‍🎓
+📁 Admin-Application/       # Next.js frontend for administrators 🧑‍💼
+```
+
+---
+
+## ✅ Prerequisites
+
+Before setting up the project, ensure you have the following installed:
+
+- 🟢 **Node.js** (LTS version recommended)
+- 📦 **Package Manager** (npm / yarn / pnpm / bun)
+- 🐍 **Python 3.8+**
+- 🔧 **pip** (Python package installer)
+- 🛢️ **MySQL** (running locally)
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Backend Setup – FastAPI Server
+
+Navigate to the backend directory and install Python dependencies:
+
+```bash
 cd FastAPI-Server
 pip install -r requirements.txt
-💡 Tip: If requirements.txt doesn’t exist yet, generate it after installing your packages:
+```
 
-bash
-Copy code
+💡 **Tip**: If `requirements.txt` doesn't exist yet, generate it after installing your packages:
+
+```bash
 pip freeze > requirements.txt
-💻 2. Frontend Setup – Student-Application and Admin-Application
-👨‍🎓 Student Application
-bash
-Copy code
+```
+
+### 2. Frontend Setup
+
+#### 👨‍🎓 Student Application
+
+```bash
 cd Student-Application
-npm install   # or: yarn install / pnpm install / bun install
-🧑‍💼 Admin Application
-bash
-Copy code
+npm install
+# Alternative package managers:
+# yarn install
+# pnpm install
+# bun install
+```
+
+#### 🧑‍💼 Admin Application
+
+```bash
 cd Admin-Application
-npm install   # or: yarn install / pnpm install / bun install
-▶️ 3. Running the Applications
-🐍 Run the Backend
-bash
-Copy code
+npm install
+# Alternative package managers:
+# yarn install
+# pnpm install
+# bun install
+```
+
+---
+
+## ▶️ Running the Applications
+
+### 1. 🐍 Start the Backend Server
+
+```bash
 cd FastAPI-Server
 uvicorn main:app --reload
-📍 Available at: http://127.0.0.1:8000
+```
 
-👨‍🎓 Run the Student Frontend
-bash
-Copy code
+📍 **Backend URL**: http://127.0.0.1:8000
+
+### 2. 👨‍🎓 Start the Student Frontend
+
+```bash
 cd Student-Application
 npm run dev
-📍 Available at: http://localhost:3000
+```
 
-🧑‍💼 Run the Admin Frontend
-bash
-Copy code
+📍 **Student Portal URL**: http://localhost:3000
+
+### 3. 🧑‍💼 Start the Admin Frontend
+
+```bash
 cd Admin-Application
 npm run dev
-📍 Usually runs at: http://localhost:3001
+```
 
-📝 Additional Notes
-🔐 Make sure to configure your database credentials securely (avoid hardcoding sensitive info).
+📍 **Admin Portal URL**: http://localhost:3001 (usually)
 
-🗂️ Add config.py or .env to .gitignore to keep secrets safe.
+---
 
-🛢️ Start your MySQL database before launching the backend.
+## 📝 Additional Notes
 
-🌐 API docs available at: http://127.0.0.1:8000/docs
+### 🔐 Security Considerations
 
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- Configure your database credentials securely
+- **Never hardcode sensitive information** in your source code
+- Add `config.py` or `.env` files to `.gitignore` to keep secrets safe
 
-sql
-Copy code
+### 🛢️ Database Setup
+
+- Ensure your **MySQL database is running** before launching the backend
+- Configure database connection settings properly
+
+### 📖 API Documentation
+
+- FastAPI automatically generates interactive API documentation
+- 🌐 **API Docs**: http://127.0.0.1:8000/docs
+- 📊 **Alternative Docs**: http://127.0.0.1:8000/redoc
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the LICENSE file for details.
+
+```
 MIT License
 
 Copyright (c) 2025 SHASHIKIRAN
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the "Software"), to deal  
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in  
-all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER  
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,  
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF OTHER DEALINGS IN  
-THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📧 Support
+
+If you encounter any issues or have questions, please open an issue in the repository.
+
+---
