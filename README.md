@@ -1,13 +1,12 @@
-# Leave-Management-System
 🚀 Leave Management System
 This repository contains the full stack for a Leave Management System, comprising a FastAPI backend and two Next.js frontends — one for 👨‍🎓 Students and one for 🧑‍💼 Admins.
 
 🧱 Project Structure
 graphql
 Copy code
-📁 FastAPI-Server/          # Backend API built with FastAPI 🐍
-📁 Student-Application/     # Next.js frontend for students 👨‍🎓
-📁 Admin-Application/       # Next.js frontend for administrators 🧑‍💼
+📁 FastAPI-Server/          # Backend API built with FastAPI 🐍  
+📁 Student-Application/     # Next.js frontend for students 👨‍🎓  
+📁 Admin-Application/       # Next.js frontend for administrators 🧑‍💼  
 🛠️ Getting Started
 Follow the instructions below to set up and run the project locally.
 
@@ -20,7 +19,7 @@ Follow the instructions below to set up and run the project locally.
 
 🔧 pip (Python package installer)
 
-🛢️ MySQL or MariaDB running locally
+🛢️ MySQL running locally
 
 🔧 1. Backend Setup – FastAPI-Server
 Navigate into the backend directory and install Python dependencies:
@@ -29,7 +28,7 @@ bash
 Copy code
 cd FastAPI-Server
 pip install -r requirements.txt
-💡 Tip: If requirements.txt doesn’t exist yet, create one after installing your packages:
+💡 Tip: If requirements.txt doesn’t exist yet, generate it after installing your packages:
 
 bash
 Copy code
@@ -65,8 +64,7 @@ bash
 Copy code
 cd Admin-Application
 npm run dev
-📍 Usually runs on: http://localhost:3001
-(Or another available port if 3000 is in use)
+📍 Usually runs at: http://localhost:3001
 
 📝 Additional Notes
 🔐 Make sure to configure your database credentials securely (avoid hardcoding sensitive info).
@@ -75,5 +73,29 @@ npm run dev
 
 🛢️ Start your MySQL database before launching the backend.
 
-🌐 API docs are available at: http://127.0.0.1:8000/docs
+🌐 API docs available at: http://127.0.0.1:8000/docs
 
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+MIT License
+
+Copyright (c) 2025 SHASHIKIRAN
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+In the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS ARE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF OTHER DEALINGS IN  
+THE SOFTWARE.
