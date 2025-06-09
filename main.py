@@ -12,9 +12,9 @@ timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 # MySQL connection config
 MYSQL_CONFIG = {
     'host': 'localhost',
-    'user': 'root',
-    'password': 'Shashi@2005!',
-    'database': 'leave_request', # Ensure this database exists
+    'user': 'your_username',
+    'password': 'your_password',
+    'database': 'your_db_name', # Ensure this database exists
     'charset': 'utf8mb4',
     'cursorclass': pymysql.cursors.DictCursor
 }
